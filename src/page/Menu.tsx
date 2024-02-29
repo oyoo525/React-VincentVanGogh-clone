@@ -130,31 +130,23 @@ export function Menu04() {
 	)
 }
 
-export function Menu05() {
+export function Menu05({setIsHeaderOpen, setIsMenuOpen}) {
+	const headerClose = () => {
+		setIsMenuOpen(false);
+		setIsHeaderOpen(true);
+	}
+
 	return (
 		<div className="menu menu_about">
 			<div className="menu_wrap">
-				<input type="text" />
-				<hr />
-				<div className="menu_flex">
-					<div>
-						<section>
-							<ul className="menu_main">
-								<li>Partners and Collaborations</li>
-								<li>Support the Museum</li>
-								<li>News and Press</li>
-								<li>Knowledge and Research</li>
-								<li>Organisation</li>
-							</ul>
-							<hr />
-							<ul className="menu_sub">
-								<li>Contact</li>
-								<li>Newsletter</li>
-								<li>Privacy & Cookies</li>
-							</ul>
-						</section>
+				<form>
+					<input type="text" placeholder="search" />
+					<div className="icon_box">
+						<span><i className="bi bi-search"></i></span>
+						<span onClick={headerClose}><i className="bi bi-x-lg"></i></span>
 					</div>
-				</div>
+				</form>
+				<hr />
 			</div>
 		</div>
 	)

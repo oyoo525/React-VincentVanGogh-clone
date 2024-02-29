@@ -59,3 +59,32 @@
 	margin: 0;
 	
 }
+
+.menu input {
+	width: 90%;
+	height: 62px;
+	margin-bottom: 16px;
+	font-size: 42px;
+	border: none;
+	background-color: transparent;
+}
+
+.menu input::placeholder {
+	font-size: 42px;
+	color: beige;
+}
+
+.menu input:focus {
+	outline: none;
+}
+
+.menu form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu form .icon_box span {
+	font-size: 36px;
+	margin: 0 8px;
+	cursor: pointer;
+}
