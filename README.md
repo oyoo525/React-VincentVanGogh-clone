@@ -30,3 +30,13 @@
 |메인페이지|
 |---|
 |![screencapture-localhost-3000-2024-02-28-20_18_59](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/58b5a63a-1910-4ce2-8ae7-938913281bae)|
+
+|메뉴오픈|
+|---|
+|![제목 없음](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/22c4ae5b-5679-48fc-93f4-14bb85af3888)|
+
+|Website 클릭 시 shop으로 이동 => shop 메인페이지|
+|---|
+|![screencapture-localhost-3000-shop-2024-02-29-18_50_40](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/bb24c139-971c-4d13-a89f-dcf517eceb2f)|
+
+
