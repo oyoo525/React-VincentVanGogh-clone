@@ -1,0 +1,123 @@
+.product_detail {
+	width: 100%;
+}
+
+.product_detail .content_info {
+	padding: 36px 102px;
+}
+
+.product_detail .content_info .path_box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.product_detail .content_info .path_box ul {
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+.product_detail .content_info .path_box li {
+	font-size: 18px;
+	font-weight: 400;
+	padding: 5px 6px;
+}
+
+.product_detail .content_info .path_box li span {
+	color: darkgray;
+}
+
+.product_detail .content_info .path_box li span:hover {
+	cursor: pointer;
+	color: black;
+	text-decoration: underline;
+}
+
+.product_detail .content_info .path_box .history_back_btn {
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.product_detail .content_info .data_info {
+	display: flex;
+	width: 100%;
+}
+
+.product_detail .content_info .data_info .mini_image_box {
+	width: 7%;
+	padding: 5px;
+}
+
+.product_detail .content_info .data_info .image_wrap {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	border: 1px solid darkgray;
+	padding: 5px;
+}
+
+.product_detail .content_info .data_info .image_wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.product_detail .content_info .data_info .image_box {
+	width: 33%;
+	padding: 5px;
+}
+
+.product_detail .content_info .data_info .data_detail {
+	width: 60%;
+	padding: 5px 32px;
+}
+
+.product_detail .content_info .data_info .data_detail h1 {
+	font-size: 42px;
+	font-weight: 600;
+	margin: 0;
+	margin-bottom: 18px;
+}
+
+.product_detail .content_info .data_info .data_detail span {
+	font-size: 24px;
+	font-weight: 800;
+	color: gray;
+}
+
+.product_detail .content_info .data_info .data_detail hr {
+	margin-bottom: 18px;
+}
+
+.product_detail .content_info .data_info .data_detail ul {
+	list-style: none;
+}
+
+.product_detail .content_info .data_info .data_detail li {
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+.product_detail .content_info .data_info .data_detail li:first-child {
+	font-weight: 700;
+}
+
+.product_detail .content_info .data_info .data_detail li i {
+	color: green;
+}
+
+.product_detail .content_info .data_info .data_detail .add_cart {
+	margin-top: 42px;
+	display: flex;
+}
+
+.product_detail .content_info .data_info .data_detail .add_cart input {
+	width: 48px;
+	text-align: right;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.product_detail .content_info .data_info .data_detail .add_cart .black_btn span {
+	color: #FFF;
+}

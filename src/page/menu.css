@@ -1,0 +1,61 @@
+.menu {
+	height: calc(100vh - 98px);
+	padding-bottom: 82px;
+	padding-top: 24px;
+	padding-left: 92px;
+	padding-right: 92px;
+}
+
+.menu h1, ul, hr {
+	margin: 0;
+	padding: 0;
+}
+
+.menu h1 {
+	font-size: 72px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.menu hr {
+	border: 2px solid black;
+}
+
+.menu .menu_flex {
+	display: flex;
+	justify-content: end;
+}
+
+.menu .menu_main {
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	width: 60vw;
+}
+
+.menu .menu_main li {
+	font-size: 36px;
+	margin: 7px 0;
+}
+
+.menu .menu_sub {
+	height: auto;
+	margin-top: 12px;
+}
+
+.menu .menu_sub li {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.menu .lang_main {
+	padding: 24px;
+	width: 40%;
+}
+
+.menu .lang_main h3 {
+	font-size: 42px;
+	font-weight: 600;
+	margin: 0;
+	
+}

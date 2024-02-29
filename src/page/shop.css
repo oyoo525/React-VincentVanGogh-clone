@@ -1,0 +1,141 @@
+.shop {
+	padding-top: 98px;
+}
+
+.shop .shop_main_product_wrap {
+	width: 100%;
+	height: 40vw;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 14px;
+}
+
+.shop .shop_main_product_wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.shop .shop_main_product_wrap .product_title {
+	position: absolute;
+	left: 4vw;
+	top: 4vw;
+}
+
+.shop .shop_main_product_wrap .product_title h2 {
+	font-size: 42px;
+	font-weight: 600;
+}
+
+.shop .shop_main_product_wrap .product_title .black_btn {
+	font-size: 20px;
+}
+
+.shop .shop_content {
+	display: flex;
+	padding: 0 92px;
+}
+
+.shop .shop_content .side_left {
+	width: 25%;
+}
+
+.shop .shop_content .content {
+	width: 75%;
+	padding-left: 20px;
+}
+ 
+.shop .shop_content .content h2 {
+	margin: 0;
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 14px;
+}
+
+.shop .shop_content .content .product_box {
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.shop .shop_content .content .product_box > div {
+	width: calc(100% / 4);
+}
+
+.shop .shop_content .content .product_box > div:last-child {
+	margin-right: 0;
+}
+
+.shop .shop_content .content .introduction_box {
+	display: flex;
+	width: 100%;
+}
+
+.shop .shop_content .content .introduction_box > div {
+	width: 50%;
+}
+
+.shop .shop_content .content .introduction_box .intro_text {
+	padding: 24px;
+	text-align: center;
+}
+
+.shop .shop_content .content .introduction_box .intro_text h4 {
+	font-size: 42px;
+	margin: 12px 0;
+}
+
+.shop .shop_content .content .introduction_box .intro_text p {
+	font-size: 24px;
+	margin-bottom: 42px;
+}
+
+.shop .shop_content .content .introduction_box .intro_text span {
+	font-size: 24px;
+}
+
+
+.shop .shop_content .content .introduction_box video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.shop .shop_content .content .Favourite_box {
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.shop .shop_content .content .plus_product {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.shop .shop_content .content .plus_product .image_box {
+	width: 100%;
+	cursor: pointer;
+	position: relative;
+}
+
+.shop .shop_content .content .plus_product .image_box img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.shop .shop_content .content .plus_product .image_box .image_title {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 5px 12px;
+	font-size: 24px;
+}
+
+.shop .shop_content .content .plus_product .flex_box {
+	display: flex;
+}
+
+.shop .shop_content .content .plus_product .flex_box div:last-child {
+	margin-left: 5px;
+}

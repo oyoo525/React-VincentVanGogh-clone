@@ -1,0 +1,34 @@
+
+.add_wrap {
+	padding: 20px;
+	margin-bottom: 16px;
+}
+
+.add_wrap .img_wrap {
+	width: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.add_wrap .img_wrap img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.add_wrap p {
+	font-size: 24px;
+}
+
+.add_wrap .black_btn {
+	cursor: pointer;
+}
+
+.add_wrap .black_btn:hover {
+	background-color: darkgray;
+}
+
+.add_wrap .black_btn span {
+	font-size: 18px;
+}
+
