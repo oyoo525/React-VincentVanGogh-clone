@@ -30,13 +30,29 @@
 |메인페이지|
 |---|
 |![screencapture-localhost-3000-2024-02-28-20_18_59](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/58b5a63a-1910-4ce2-8ae7-938913281bae)|
+<br>
 
 |메뉴오픈|
 |---|
 |![제목 없음](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/22c4ae5b-5679-48fc-93f4-14bb85af3888)|
+<br>
 
 |Website 클릭 시 shop으로 이동 => shop 메인페이지|
 |---|
-|![screencapture-localhost-3000-shop-2024-02-29-18_50_40](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/bb24c139-971c-4d13-a89f-dcf517eceb2f)|
+|![screencapture-localhost-3000-shop-2024-02-29-23_42_51](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/42a83fa0-e8f1-488c-939d-15ce7f21e652)|
+<br>
+
+|shop 페이지 카테고리 클릭시|
+|---|
+|![screencapture-localhost-3000-shop-books-2024-02-29-23_43_43](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/3c3b752b-0f53-4a47-8f29-b88d37632e95)|
+<br>
+
+|shop 페이지 제품 상세페이지|
+|---|
+|![screencapture-localhost-3000-productDetail-633276-2024-02-29-23_44_41](https://github.com/oyoo525/React-VincentVanGogh-clone/assets/141537487/520338ba-e3b6-40be-8e8e-90431ec9e7fe)|
+
+
+
+
 
 
