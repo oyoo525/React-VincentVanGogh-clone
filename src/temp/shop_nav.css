@@ -19,6 +19,7 @@
 	background-color: transparent;
 	font-size: 24px;
 	position: relative;
+	cursor: pointer;
 }
 
 .shop_nav li button span {

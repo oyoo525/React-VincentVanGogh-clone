@@ -21,19 +21,44 @@ body {
   background-color: rgb(0,153,217);
 }
 
+.path_box {
+	padding: 5px 108px;
+}
+
+.path_box ul {
+	display: flex;
+	margin: 0;
+	list-style: none;
+}
+
+.path_box li {
+	padding-right: 14px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.path_box li span {
+	color: gray;
+	cursor: pointer;
+}
+
+
+
 .black_btn {
   background-color: #000;
   color: #FFF;
   width: fit-content;
   padding: 8px 16px;
   text-align: center;
-  border-top-left-radius: 18px 20px;
-  border-bottom-left-radius: 18px 20px;
-  border-top-right-radius: 18px 20px;
-  border-bottom-right-radius: 18px 20px;
+  border-radius: 18px;
+  /* border-top-left-radius: 18px 50%;
+  border-bottom-left-radius: 18px 50%;
+  border-top-right-radius: 18px 50%;
+  border-bottom-right-radius: 18px 50%; */
   display: flex;
   align-items: center;
 }
+
 
 /* li 안에 span 태그에 줄것!! */
 .move_underline {

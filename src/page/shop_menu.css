@@ -1,0 +1,12 @@
+.shop_menu .shop_menu_nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 92px;
+	margin-bottom: 24px;
+}
+
+.shop_menu .shop_menu_nav > div {
+	width: 23%;
+	margin-bottom: 16px;
+}

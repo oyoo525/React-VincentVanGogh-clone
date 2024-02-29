@@ -1,12 +1,13 @@
 import React from "react";
 import './productDetail.css';
 import { useParams } from "react-router-dom";
+import M_image from '../image/origamo+x+vgm+-+logo.png';
 import Shop_nav from "../temp/Shop_nav.tsx";
+import Product from "./web_site/Product.tsx";
+import Footer from "../temp/footer/Footer.tsx";
 
 export default function ProductDetail() {
 	const no = useParams();
-	console.log(no);
-
 	const product_data01 = {
 		no : 633276,
 		name : "Origamo x Van Gogh Museum 3D Pop-Up Card Sunflowers mini",
@@ -21,6 +22,10 @@ export default function ProductDetail() {
 		image02 : "633276-3.jpg",
 		description : "Vincent painted this later version of the Sunflowers in 1889 as a gift to his friend Paul Gauguin.",
 		specs : "Handmade from Italian FSC certified paper that has been recycled or is from regenerated forests, in studios that guarantee fairtrade working conditions. Your purchase supports the Christina Noble Children’s Foundation."
+	}
+
+	function history_back() {
+		window.history.back();
 	}
 
 	return (
@@ -41,7 +46,7 @@ export default function ProductDetail() {
 							<li>{product_data01.name}</li>
 						</ul>
 					</nav>
-					<div className="history_back_btn">
+					<div className="history_back_btn" onClick={history_back}>
 						<span>Back to previous page</span>
 					</div>
 				</div>
@@ -77,34 +82,43 @@ export default function ProductDetail() {
 						</div>
 					</div>
 				</div>
-				<div className="data_info_detail">
-					<div>
-						<h4>Description</h4>
-						<p>Spread joy with this unique handmade pop-up greeting card featuring Van Gogh's flowers! This three-dimensional paper bouquet is sure to dazzle and delight your loved ones.</p>
-						<p>{product_data01.description}</p>
-					</div>
-					<div>
-						<h4>Specs</h4>
-						<p>{product_data01.specs}</p>
-						<dl>
-							<dt>Article number:</dt>
-							<dd>{product_data01.no}</dd>
-							<dt>Brand:</dt>
-							<dd>{product_data01.brand}</dd>
-							<dt>Length:</dt>
-							<dd>{product_data01.length}</dd>
-							<dt>Width:</dt>
-							<dd>{product_data01.width}</dd>
-							<dt>Material:</dt>
-							<dd>{product_data01.material}</dd>
-						</dl>
-					</div>
-				</div>
-
-
-
 			</div>
-			
+			<div className="content_info_detail">
+				<div className="detail_left">
+					<h4>Description</h4>
+					<p>Spread joy with this unique handmade pop-up greeting card featuring Van Gogh's flowers! This three-dimensional paper bouquet is sure to dazzle and delight your loved ones.</p>
+					<p>{product_data01.description}</p>
+				</div>
+				<div className="detail_right">
+					<h4>Specs</h4>
+					<p>{product_data01.specs}</p>
+					<dl>
+						<dt>Article number:</dt>
+						<dd>{product_data01.no}</dd>
+						<dt>Brand:</dt>
+						<dd>{product_data01.brand}</dd>
+						<dt>Length:</dt>
+						<dd>{product_data01.length}</dd>
+						<dt>Width:</dt>
+						<dd>{product_data01.width}</dd>
+						<dt>Material:</dt>
+						<dd>{product_data01.material}</dd>
+						<dd>
+							<img src={M_image} />
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div className="other_product">
+				<h4>Related products</h4>
+				<div className="product_wrap">
+					<Product data={product_data01}/>
+					<Product data={product_data01}/>
+				</div>
+			</div>
+			<nav className="footer_box">
+				<Footer />
+			</nav>
 		</div>
 	)
 }

@@ -5,6 +5,8 @@ import Header from './temp/header/Header.tsx';
 import Home from './page/Home.tsx';
 import Shop from './page/Shop.tsx';
 import ProductDetail from './page/ProductDetail.tsx';
+import ShopMenu from './page/shop_menu.tsx';
+import ShopCart from './page/web_site/Shop_cart.tsx';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
+          <Route path='/shop/:type' element={<ShopMenu />} />
+          <Route path='/shop_cart' element={<ShopCart />} />
           <Route path='/productDetail/:no' element={<ProductDetail />} />
         </Routes>
       </BrowserRouter>
