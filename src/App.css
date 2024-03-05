@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-  padding-top: 98px;
+  margin-top: 98px;
 }
-
+/* backGround_Color */
 .bg_color00 {
   background-color: rgb(255,206,1);
 }
@@ -21,22 +21,20 @@ body {
   background-color: rgb(0,153,217);
 }
 
+/* path_box */
 .path_box {
 	padding: 5px 108px;
 }
-
 .path_box ul {
 	display: flex;
 	margin: 0;
 	list-style: none;
 }
-
 .path_box li {
 	padding-right: 14px;
 	font-size: 18px;
 	text-transform: uppercase;
 }
-
 .path_box li span {
 	color: gray;
 	cursor: pointer;
@@ -60,12 +58,11 @@ body {
 }
 
 
-/* li 안에 span 태그에 줄것!! */
+/* move_underline li 안에 span 태그에 줄것!! */
 .move_underline {
   display: inline-block;
 	cursor: pointer;
 }
-
 .move_underline::after {
   display:block;
   content: '';
@@ -74,7 +71,6 @@ body {
   transition: transform 250ms ease-in-out;
 	transform-origin:  0% 50%; 
 }
-
 .move_underline:hover::after {
   transform: scaleX(1);
 }

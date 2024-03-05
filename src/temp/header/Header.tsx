@@ -1,18 +1,39 @@
 import React from "react";
 import './header.css';
+import $ from 'jquery';
 import { useNavigate } from "react-router-dom";
 import Menu01, { Menu02, Menu03, Menu04, Menu05 } from "../../page/Menu.tsx";
 
-export default function Header() {
+
+export default function Header({isMenuOpen, setIsMenuOpen, color}) {
 	const navigator = useNavigate();
 	
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	// 헤더 메뉴
 	const [menuOption, setMenuOption] = React.useState("");
-	const [isHeaderOpen, setIsHeaderOpen] = React.useState(true);
-	
+	// 검색아이콘 클릭시 헤더 숨기기용
+	const [isHeaderOpen, setIsHeaderOpen] = React.useState(true);	
+	// 헤더 색상
+	const [backColorRGB, setBackColorRGB] = React.useState("");
+	React.useEffect(() => {
+		if(color === 'yellow') {
+			setBackColorRGB('rgb(255,206,1)');
+		}
+	})
+
+
+	function HomeOrigin() {
+		$('body, html').animate({
+			ScrollLeft : 0
+		});
+		$(':root').css(
+			'background-color', 'rgb(255, 206, 1)'
+		);
+	}
+
 	const moveHome = () => {
 		navigator('/');
 		setIsMenuOpen(false);
+		HomeOrigin();
 	}
 	const moveShop = () => {
 		navigator('/shop');
@@ -63,7 +84,7 @@ export default function Header() {
 	
 	return (
 		<>
-			<div className="header">
+			<div className="header" style={{ backgroundColor : backColorRGB }}>
 				{isHeaderOpen && (
 					<nav className="header_nav">
 						<ul>
@@ -82,10 +103,10 @@ export default function Header() {
 					</nav>
 				)}
 				<div className="header_menu_wrap">
-					{isMenuOpen && menuOption === 'ticket' && <Menu01 />}
-					{isMenuOpen && menuOption === 'art' && <Menu02 />}
-					{isMenuOpen && menuOption === 'about' && <Menu03 />}
-					{isMenuOpen && menuOption === 'lang' && <Menu04 />}
+					{isMenuOpen && menuOption === 'ticket' && <Menu01 setIsMenuOpen={setIsMenuOpen} />}
+					{isMenuOpen && menuOption === 'art' && <Menu02 setIsMenuOpen={setIsMenuOpen} />}
+					{isMenuOpen && menuOption === 'about' && <Menu03 setIsMenuOpen={setIsMenuOpen} />}
+					{isMenuOpen && menuOption === 'lang' && <Menu04 setIsMenuOpen={setIsMenuOpen} />}
 					{isMenuOpen && menuOption === 'search' && <Menu05 setIsHeaderOpen={setIsHeaderOpen} setIsMenuOpen={setIsMenuOpen} />}
 				</div>
 			</div>

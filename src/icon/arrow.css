@@ -1,0 +1,45 @@
+
+/* 오른쪽 화살표 */
+.bi-arrow-right {
+	margin-left: 5px;
+	margin-right:15px;
+}
+.arrow_box:hover .bi-arrow-right {
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+
+
+/* 아래 화살표 */
+.arrow_box .arrow_text {
+	position: relative;
+}
+
+.bi-arrow-down {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.arrow_box:hover .bi-arrow-down {
+	animation: moveDown 0.3s infinite;
+}
+
+@keyframes moveDown {
+	0% {
+		top: 0px;
+	}
+	20% {
+		top: -5px;
+	}
+	40% {
+		top : 0px;
+	}
+	60% {
+		top: 5px;
+	}
+	80% {
+		top: 0px;
+	}
+}

@@ -1,0 +1,70 @@
+.ticket_price .title_info {
+	display: flex;
+	margin-bottom: 32px;
+}
+
+.ticket_price .title_info > div {
+	padding-right: 32px;
+	width: calc(100% /3);
+}
+
+.ticket_price .title_info > div:last-child {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	padding-right: 0;
+}
+
+.ticket_price .title_info > div > p:first-child {
+	font-weight: 600;
+}
+
+.ticket_price .content_info {
+	display: flex;
+	margin-top: 48px;
+}
+
+.ticket_price .content_info h3 {
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 16px;
+	margin-top: 56px;
+}
+
+.ticket_price .content_info p {
+	margin-bottom: 32px;
+}
+
+.ticket_price .content_info p span {
+	font-weight: 700;
+}
+
+.ticket_price .content_info ul {
+	margin-left: 20px;
+}
+
+.ticket_price .content_info li {
+	font-size: 20px;
+}
+
+.ticket_price .content_info .left_box {
+	width: calc(100% / 3);
+	padding-right: 72px;
+}
+
+.ticket_price .ticket_price .content_info {
+	padding: 48px 0;
+}
+
+.ticket_price .content_info .right_box {
+	width: 50%;
+}
+
+.ticket_price .card_box {
+	display: flex;
+	margin-top: 72px;
+}
+
+.ticket_price .card_box > div {
+	padding: 0 24px;
+}

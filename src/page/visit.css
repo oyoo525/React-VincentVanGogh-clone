@@ -1,0 +1,24 @@
+.visit {
+	padding: 24px 92px 108px 92px;
+}
+
+.visit p {
+	font-size: 20px;
+	margin: 0;
+}
+
+.visit hr {
+	margin: 0;
+	border: 1.5px solid black;
+}
+
+.visit .title_box {
+	margin-right: 30%;
+	margin-bottom: 72px;
+}
+
+.visit .title_box h1 {
+	font-size: 108px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}

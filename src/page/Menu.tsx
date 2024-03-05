@@ -1,7 +1,15 @@
 import React from "react";
 import './menu.css';
+import { useNavigate } from "react-router-dom";
 
-export default function Menu01() {
+export default function Menu01({setIsMenuOpen}) {
+	const navi = useNavigate();
+
+	function moveOn(page) {
+		navi(`/visit/${page}`);
+		setIsMenuOpen(false);
+	}
+
 	return (
 		<div className="menu menu_tickets">
 			<div className="menu_wrap">
@@ -11,13 +19,12 @@ export default function Menu01() {
 					<div>
 						<section>
 							<ul className="menu_main">
-								<li>Tickets and Ticket Prices</li>
-								<li>Address and Opening Hours</li>
-								<li>What's On</li>
-								<li>Exhibitions</li>
-								<li>Grop and School Visits</li>
-								<li>Museum Shops, Cafe and More</li>
-								<li></li>
+								<li className="move_underline" onClick={() => moveOn('ticket')}>Tickets and Ticket Prices</li>
+								<li className="move_underline">Address and Opening Hours</li>
+								<li className="move_underline" onClick={() => moveOn('whats_on')}>What's On</li>
+								<li className="move_underline">Exhibitions</li>
+								<li className="move_underline">Grop and School Visits</li>
+								<li className="move_underline">Museum Shops, Cafe and More</li>
 							</ul>
 							<hr />
 							<ul className="menu_sub">
@@ -34,7 +41,7 @@ export default function Menu01() {
 }
 
 
-export function Menu02() {
+export function Menu02({setIsMenuOpen}) {
 	return (
 		<div className="menu menu_collection">
 			<div className="menu_wrap">
@@ -44,12 +51,12 @@ export function Menu02() {
 					<div>
 						<section>
 							<ul className="menu_main">
-								<li>Art</li>
-								<li>Search the Collection</li>
-								<li>The Life of Vincent van Gogh</li>
-								<li>Van Gogh Stroies</li>
-								<li>Vincent van Gogh for Children</li>
-								<li>Research</li>
+								<li className="move_underline">Art</li>
+								<li className="move_underline">Search the Collection</li>
+								<li className="move_underline">The Life of Vincent van Gogh</li>
+								<li className="move_underline">Van Gogh Stroies</li>
+								<li className="move_underline">Vincent van Gogh for Children</li>
+								<li className="move_underline">Research</li>
 							</ul>
 							<hr />
 							<ul className="menu_sub">
@@ -65,7 +72,7 @@ export function Menu02() {
 	)
 }
 
-export function Menu03() {
+export function Menu03({setIsMenuOpen}) {
 	return (
 		<div className="menu menu_about">
 			<div className="menu_wrap">
@@ -75,11 +82,11 @@ export function Menu03() {
 					<div>
 						<section>
 							<ul className="menu_main">
-								<li>Partners and Collaborations</li>
-								<li>Support the Museum</li>
-								<li>News and Press</li>
-								<li>Knowledge and Research</li>
-								<li>Organisation</li>
+								<li className="move_underline">Partners and Collaborations</li>
+								<li className="move_underline">Support the Museum</li>
+								<li className="move_underline">News and Press</li>
+								<li className="move_underline">Knowledge and Research</li>
+								<li className="move_underline">Organisation</li>
 							</ul>
 							<hr />
 							<ul className="menu_sub">
@@ -95,7 +102,7 @@ export function Menu03() {
 	)
 }
 
-export function Menu04() {
+export function Menu04({setIsMenuOpen}) {
 	return (
 		<div className="menu menu_lang">
 			<div className="menu_wrap">
@@ -109,12 +116,12 @@ export function Menu04() {
 					<div>
 						<section>
 							<ul className="menu_main">
-								<li>Planen Sie Ihren Besuch</li>
-								<li>Programmz votre visite</li>
-								<li>Prepara la tua visita</li>
-								<li>Planifica tu visita</li>
-								<li>Planeje sua visita</li>
-								<li>방문계획</li>
+								<li className="move_underline">Planen Sie Ihren Besuch</li>
+								<li className="move_underline">Programmz votre visite</li>
+								<li className="move_underline">Prepara la tua visita</li>
+								<li className="move_underline">Planifica tu visita</li>
+								<li className="move_underline">Planeje sua visita</li>
+								<li className="move_underline">방문계획</li>
 							</ul>
 							<hr />
 							<ul className="menu_sub">

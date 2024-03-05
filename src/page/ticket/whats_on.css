@@ -1,0 +1,68 @@
+.whats_on .arrow_box {
+	cursor: pointer;
+}
+
+.whats_on > div:first-child {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.whats_on .title_box {
+	width: 50%;
+}
+
+.whats_on > div:first-child > .arrow_box > p {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.whats_on nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.whats_on nav ul li {
+	width: calc(100% / 4);
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.whats_on nav ul li .bi-arrow-down {
+	right: -30px;
+}
+
+.whats_on .content_box {
+	margin: 48px 0;
+}
+
+.whats_on .content_box > div {
+	margin-bottom: 48px;
+}
+
+.whats_on .content_box .content_title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 32px;
+}
+
+.whats_on .content_box .content_title > h2 {
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.whats_on .content_box .content_title > p {
+	font-size: 28px;
+}
+
+.whats_on .content_box .card_box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.whats_on .content_box .card_box > div {
+	width: calc(100% / 3);
+	padding: 12px;
+}
