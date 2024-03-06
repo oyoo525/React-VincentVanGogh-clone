@@ -2,28 +2,7 @@ import $ from 'jquery';
 
 $(document).ready(function() {
 
-	$(window).on('scroll', function() {
-		// 스크롤 위치 확인하기
-		const currentScrollPosition = $(window).scrollTop();
-		// nav 위치 확인하기
-		const pageNavScrollPosition = $(".page_nav").offset().top;
-
-		console.log(pageNavScrollPosition);
-
-		if(currentScrollPosition > pageNavScrollPosition) {
-			$('.page_nav').css({'position' : 'fixed', 'left' : 0, 'top' : '98px' })
-		} else (
-			$('.page_nav').css({'position' : 'initial'})
-		)
-
-
-	});
-
-
-
-
-
-
+	// 스크롤스파이 설정
 	let contents : number = $('.content_title').length;
 	const top : number[] = [];
 	for(let i=0; i<contents; i++) {
@@ -44,7 +23,7 @@ $(document).ready(function() {
 		console.log('index : ', index);
 		console.log(`top[index] : ${top[index]}`);
 
-		scrollSpy(top[index] - 98);
+		scrollSpy(top[index] - 20);
 	});
 
 

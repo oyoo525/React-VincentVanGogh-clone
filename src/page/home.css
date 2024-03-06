@@ -7,6 +7,10 @@
 
 .home .header {
 	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
 }
 
 .home > div {

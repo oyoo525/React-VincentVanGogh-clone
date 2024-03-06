@@ -20,7 +20,10 @@
 
 .whats_on nav ul {
 	display: flex;
+	align-items: center;
 	list-style: none;
+	height: 100%;
+	padding-top: 24px;
 }
 
 .whats_on nav ul li {

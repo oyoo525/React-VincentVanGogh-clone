@@ -51,7 +51,9 @@ export default function TicketPrice() {
 					<p>Book ticket <Arrow_Right /></p>
 				</div>
 			</div>
-			<hr />
+			<nav className="page_nav">
+				
+			</nav>
 			<div className="content_info">
 				<div className="left_box">
 					<Card data={card_data} />

@@ -1,12 +1,11 @@
 .shop_menu .shop_menu_nav {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 25px 92px;
-	margin-bottom: 24px;
+	margin: 25px 92px 50px 92px;
 }
 
 .shop_menu .shop_menu_nav > div {
-	width: 23%;
+	width: 25%;
+	padding: 6px;
 	margin-bottom: 16px;
 }

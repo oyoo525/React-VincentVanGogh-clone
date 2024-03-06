@@ -5,6 +5,7 @@ import video01 from '../video/9b39eb11-32f6501c.mp4';
 import Shop_adver from "./web_site/Shop_add.tsx";
 import Product from "./web_site/Product.tsx";
 import ImageBox from "../components/image_box/ImageBox.tsx";
+import Header from "../temp/header/Header.tsx";
 
 export default function Shop() {
 	const mainImage = {
@@ -93,9 +94,14 @@ export default function Shop() {
 			image : "moederdag-header-webshop-2.jpg"
 		}
 	];
+
+	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 	
 	return (
 		<div className="shop bg_color01">
+			<div className="header_box">
+				<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} color="yellow"/>
+			</div>
 			<nav className="bg_color00">
 				<Shop_nav />
 			</nav>

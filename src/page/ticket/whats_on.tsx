@@ -126,7 +126,6 @@ export default function WhatsOn() {
 					<li className="arrow_box"><span className="arrow_text">More to discover <Arrow_Down /></span></li>
 				</ul>
 			</nav>
-			<hr />
 			<div className="content_box">
 				<div>
 					<div className="content_title">

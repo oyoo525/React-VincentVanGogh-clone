@@ -17,7 +17,7 @@ export default function Product(props) {
 				<img src={"/image/" + props.data.image02} className="image02" />
 			</div>
 			<h3>{props.data.name}</h3>
-			<p>HANDMADE WITH LOVE</p>
+			<p>{props.data.shot_description}</p>
 			<span>€ {props.data.price}</span>
 	</div>
 	)

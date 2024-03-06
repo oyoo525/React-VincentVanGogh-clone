@@ -92,7 +92,7 @@ export default function Header({isMenuOpen, setIsMenuOpen, color}) {
 							<li onClick={openMenu01}><span className="move_underline">Tickets & Visit</span></li>
 							<li onClick={openMenu02}><span className="move_underline">Art & Stories</span></li>
 							<li onClick={openMenu03}><span className="move_underline">About</span></li>
-							<li onClick={moveShop}><span className="move_underline">Website</span></li>
+							<li onClick={moveShop}><span className="move_underline">Shop</span></li>
 							<li onClick={openMenu04}><span className="move_underline">NL | EN</span></li>
 							<li onClick={openMenu05}>
 								<button>

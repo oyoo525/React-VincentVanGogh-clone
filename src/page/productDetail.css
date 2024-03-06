@@ -6,35 +6,13 @@
 	padding: 36px 102px;
 }
 
-.product_detail .content_info .path_box {
+.product_detail .path_box {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 32px;
 }
 
-.product_detail .content_info .path_box ul {
-	list-style: none;
-	margin: 0;
-	display: flex;
-}
-
-.product_detail .content_info .path_box li {
-	font-size: 18px;
-	font-weight: 400;
-	padding: 5px 6px;
-}
-
-.product_detail .content_info .path_box li span {
-	color: darkgray;
-}
-
-.product_detail .content_info .path_box li span:hover {
-	cursor: pointer;
-	color: black;
-	text-decoration: underline;
-}
-
-.product_detail .content_info .path_box .history_back_btn {
+.product_detail .path_box .history_back_btn {
 	font-size: 18px;
 	font-weight: 500;
 	cursor: pointer;

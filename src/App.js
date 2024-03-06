@@ -1,7 +1,7 @@
 import './App.css';
+import './page/home.ts';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './temp/header/Header.tsx';
 import Home from './page/Home.tsx';
 import Shop from './page/Shop.tsx';
 import ProductDetail from './page/ProductDetail.tsx';
@@ -20,6 +20,7 @@ function App() {
           <Route path='/visit/:page' element={<Visit />} />
           <Route path='/shop' element={<Shop />} />
           <Route path='/shop/:type' element={<ShopMenu />} />
+          <Route path='/shop/:type/:list' element={<ShopMenu />} />
           <Route path='/shop_cart' element={<ShopCart />} />
           <Route path='/productDetail/:no' element={<ProductDetail />} />
         </Routes>

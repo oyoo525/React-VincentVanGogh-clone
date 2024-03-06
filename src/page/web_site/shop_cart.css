@@ -1,0 +1,32 @@
+.shop_cart .process_box {
+	display: flex;
+	padding: 16px 92px;
+}
+
+.shop_cart .process_box > div {
+	margin-right: 24px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.shop_cart .process_box > div i {
+	font-size: 26px;
+	margin-right: 8px;
+}
+
+.shop_cart .your_cart {
+	padding: 0 98px;
+}
+
+.shop_cart .your_cart h4 {
+	font-size: 28px;
+}
+
+.shop_cart .your_cart .empty_cart {
+	font-size: 20px;
+	margin: 0;
+}
+
+

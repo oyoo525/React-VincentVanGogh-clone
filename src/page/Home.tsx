@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<div className="home">
 			<div className="header_box">
-				<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+				<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} color='transparent' />
 			</div>
 			{!isMenuOpen && (
 				<>

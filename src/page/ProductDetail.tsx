@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './productDetail.css';
 import { useParams } from "react-router-dom";
 import M_image from '../image/origamo+x+vgm+-+logo.png';
 import Shop_nav from "../temp/Shop_nav.tsx";
 import Product from "./web_site/Product.tsx";
 import Footer from "../temp/footer/Footer.tsx";
+import Header from "../temp/header/Header.tsx";
 
 export default function ProductDetail() {
-	const no = useParams();
+	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+	const param = useParams();
+	const no = param.no;
+	// param으로 데이터 가져오기
+
 	const product_data01 = {
 		no : 633276,
 		name : "Origamo x Van Gogh Museum 3D Pop-Up Card Sunflowers mini",
@@ -28,28 +33,35 @@ export default function ProductDetail() {
 		window.history.back();
 	}
 
+	useEffect(() => {
+		window.scrollTo(0,0);
+	}, []);
+
 	return (
-		<div className="container product_detail bg_color01">
+		<div className="product_detail bg_color01">
+				<div className="header_box">
+				<Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} color="yellow"/>
+			</div>
 			<nav className="bg_color00">
 				<Shop_nav />
 			</nav>
-			<div className="content_info">
-				<div className="path_box">
-					<nav>
-						<ul>
-							<li><span>HOME</span></li>
-							<li>/</li>
-							<li><span>{product_data01.category}</span></li>
-							<li>/</li>
-							<li><span>{product_data01.sub_category}</span></li>
-							<li>/</li>
-							<li>{product_data01.name}</li>
-						</ul>
-					</nav>
-					<div className="history_back_btn" onClick={history_back}>
-						<span>Back to previous page</span>
-					</div>
+			<div className="path_box">
+				<nav>
+					<ul>
+						<li><span>HOME</span></li>
+						<li>/</li>
+						<li><span>{product_data01.category}</span></li>
+						<li>/</li>
+						<li><span>{product_data01.sub_category}</span></li>
+						<li>/</li>
+						<li>{product_data01.name}</li>
+					</ul>
+				</nav>
+				<div className="history_back_btn" onClick={history_back}>
+					<span>Back to previous page</span>
 				</div>
+			</div>
+			<div className="content_info">
 				<div className="data_info">
 					<div className="mini_image_box">
 						<div className="image_wrap">
