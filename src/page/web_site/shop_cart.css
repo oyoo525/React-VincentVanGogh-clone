@@ -11,6 +11,10 @@
 	font-weight: 600;
 }
 
+.shop_cart .process_box .step_01 {
+	color: salmon;
+}
+
 .shop_cart .process_box > div i {
 	font-size: 26px;
 	margin-right: 8px;
@@ -29,4 +33,90 @@
 	margin: 0;
 }
 
+.shop_cart .your_cart .total_price_box {
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-between;
+}
+.shop_cart .your_cart .total_price_box .left_box {
+	padding: 5px 12px;
+}
 
+
+.shop_cart .your_cart .total_price_box .right_box {
+	width: 400px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 12px;
+}
+
+.shop_cart .your_cart .total_price_box .right_box > * {
+	width: 50%;
+	margin: 0;
+}
+
+.shop_cart .your_cart .total_price_box .right_box dl {
+	text-align: center;
+}
+
+.shop_cart .your_cart .total_price_box .right_box .total {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 12px 0;
+}
+
+.shop_cart .your_cart .total_price_box .right_box dt {
+	text-align: end;
+	padding-right: 12px;
+}
+
+.shop_cart .your_cart .total_price_box .right_box > div:last-child {
+	display: flex;
+	justify-content: end;
+}
+
+.shop_cart .your_cart .total_price_box .right_box .black_btn {
+	margin: 18px 0;
+}
+
+.shop_cart .your_cart .total_price_box .right_box .black_btn:hover {
+	opacity: 0.7;
+}
+
+.shop_cart .adver_box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 48px 98px;
+}
+
+.donate_box {
+	padding: 24px;
+	width: 70%;
+}
+
+.donate_box h3 {
+	font-size: 42px;
+	font-weight: 500;
+	margin: 0;
+}
+
+.donate_box p {
+	font-size: 20px;
+	margin: 12px 0;
+}
+
+.donate_box p:last-child {
+	font-size: 20px;
+	margin: 12px 0 32px 0;
+}
+
+.donate_box .btn_box {
+	margin: 12px 0 ;
+	display: flex;
+}
+
+.donate_box .btn_box .black_btn {
+	margin-right: 24px;
+}

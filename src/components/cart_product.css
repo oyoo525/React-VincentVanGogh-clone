@@ -19,9 +19,28 @@
 	text-align: center;
 }
 
-.cart_product .cart_product_amount input {
-	width: 70px;
+.cart_product .cart_product_amount .amount_btn {
+	display: flex;
+	justify-content: center;
+}
+
+.cart_product .cart_product_amount .amount_btn input {
+	width: 50px;
+	height: 42px;
 	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: end;
+}
+
+.cart_product .cart_product_amount .amount_btn button {
+	width: 40px;
+	height: 42px;
+	padding: 0;
+	font-size: 32px;
+	font-weight: 800;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .cart_product .cart_product_amount .delete_btn {
@@ -29,9 +48,14 @@
 	color: gray;
 }
 
+.cart_product .cart_product_amount .delete_btn:hover {
+	opacity: 0.7;
+}
+
 .cart_product .cart_product_price {
 	width: 200px;
 	height: 100%;
 	text-align: end;
-
+	font-size: 24px;
+	font-weight: 700;
 }
